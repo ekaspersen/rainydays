@@ -1,0 +1,63 @@
+/*--------------------------------------------
+----------------------------------------------
+header
+----------------------------------------------
+--------------------------------------------*/
+header {
+    background-color: transparent;
+}
+
+.index-header {
+    height: 396px;
+    position: relative;
+
+    background-image: url(../images/hero-banners/yellow-jacket-dude.png);
+    background-position: right bottom;
+    background-size: 600px 447px;
+    background-repeat: no-repeat;
+
+} 
+.header-text {
+    position: absolute;
+    bottom: 140px;
+    right: 15px;
+    color: white;
+    text-align: right;
+}
+.small {
+    font-size: 12px;
+    margin-bottom: -10px;
+}
+.big {
+    font-size: 35px;
+}
+/*516px --> Lphone/tablet/Desktop*/
+@media screen and (min-width:516px ) { 
+    .index-header {
+        background-size: 105%;
+    }   
+}
+
+/*--------------------------------------------
+----------------------------------------------
+navigation
+----------------------------------------------
+--------------------------------------------*/
+nav {
+    display: flex;
+    height: 56px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo {
+    max-width: 120px;
+    height: 45px;
+}
+/* Icons */
+.nav-icon {
+    max-width: 20px;
+    justify-self: center;
+    
+}
+
