@@ -7,15 +7,14 @@ header {
     background-color: transparent;
 }
 
-.index-header {
+.homepage-header {
     height: 396px;
     position: relative;
 
     background-image: url(../images/hero-banners/yellow-jacket-dude.png);
     background-position: right bottom;
-    background-size: 600px 447px;
+    background-size: 720px 500px;
     background-repeat: no-repeat;
-
 } 
 .header-text {
     position: absolute;
@@ -26,16 +25,37 @@ header {
 }
 .small {
     font-size: 12px;
+    font-weight: 400;
     margin-bottom: -10px;
 }
 .big {
     font-size: 35px;
 }
+.header-text-btn {
+    float: right;
+}
 /*516px --> Lphone/tablet/Desktop*/
-@media screen and (min-width:516px ) { 
-    .index-header {
-        background-size: 105%;
-    }   
+@media screen and (min-width:720px ) { 
+    .homepage-header {
+        background-size: auto 120%;
+        background-position: center bottom;
+        height: 650px;
+    } 
+    .header-text {
+        text-align: left;
+        bottom: 140px;
+        left: 15px;
+    }
+    .small {
+        font-size: 16px;
+        margin-bottom: -7px;
+    }
+    .big {
+        font-size: 42px;
+    }
+    .header-text-btn {
+        float: left;
+    }
 }
 
 /*--------------------------------------------
@@ -60,4 +80,3 @@ nav {
     justify-self: center;
     
 }
-

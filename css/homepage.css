@@ -32,13 +32,11 @@ items i don't know where to position (yet).
 --------------------------------------------*/
 .inner {
     margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
     max-width: 1024px;
 }
-@media screen and (max-width:1039px) {
-    .inner {
-        margin: 0 15px
-    }
-}
+
 
 .multiple-columns {
     display: flex;
@@ -79,7 +77,6 @@ Buttons
 
 .bg-yellow {
     background-color: #D9BD29;
-    float: right;
 }
 .bg-main {
     background-color: #0A3641;
@@ -94,16 +91,19 @@ Arrivals
 ----------------------------------------------
 --------------------------------------------*/
 .arrivals {
-    margin: 20px 0;
+    padding: 20px 0;
+    background-color: #E3E6EA;
     color: #0A3641;
 }
 .arrivals-title {
     text-align: center;
     font-size: 30px;
     font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
 }
 .arrivals hr {
-    width: 60vw;
+    width: 60%;
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -112,6 +112,7 @@ Arrivals
 }
 .jacket-info {
     border-top: solid thin #0A3641;
+    padding: 4px;
 }
 .category {
     font-size: 10px;
@@ -131,11 +132,23 @@ Arrivals
 }
 #arrivals-btn {
     margin: 10px auto;
+    margin-top: 25px;
 }
 .third-one {
     display: none;
 }
-@media screen and (min-width:500px) {
+@media screen and (min-width:720px) {
+    .arrivals {
+        background-color: #E3E6EA;
+    }
+    .card-arrivals {
+        border: none;
+    }
+    .jacket-info {
+        border-top: none;
+        text-align: center;
+        padding: 0;
+    }
     .third-one {
         display: block;
     }
@@ -148,15 +161,15 @@ About us / Who are we
 --------------------------------------------*/
 
 .hero-banner {
-    height: 375px;
+    height: 400px;
     position: relative;
     background-image: url(../images/hero-banners/red-jacket-dude.png);
-    background-size: 600px 400px;
+    background-size: 100%;
     background-position: bottom center;
 }
 .gradient {
-    height: 375px;
-    background: linear-gradient(360deg, rgba(37, 37, 37, 0.83) 33.75%, rgba(64, 64, 64, 0) 70.56%);
+    height: 400px;
+    background: linear-gradient(360deg, rgba(37, 37, 37, 0.582) 33.75%, rgba(64, 64, 64, 0) 70.56%);
 }
 .hero-text {
     position: absolute;
@@ -166,6 +179,11 @@ About us / Who are we
 }
 .kerning {
     letter-spacing: 0.125em;
+}
+@media screen and (max-width:650px) {
+    .hero-banner {
+        background-size: 125%;
+    }
 }
 
 /*--------------------------------------------
@@ -204,53 +222,3 @@ Contact
     font-size: 22px;
 }
 
-/*--------------------------------------------
-----------------------------------------------
-Footer
-----------------------------------------------
---------------------------------------------*/
-.outer-footer {
-    background-color: #AEBFD1;
-}
-footer {
-    margin: 0 auto;
-    max-width: 1024px;
-    height: 150px;
-    background-color: #AEBFD1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
-}
-@media screen and (max-width:1039px) {
-    footer {
-        margin: 0 15px
-    }
-}
-
-.columns {
-    flex: 1;
-
-}
-.columns img {
-    max-width: 272px;
-    max-height: 100px;
-}
-.columns-footer-two {
-    display: flex;
-    justify-content: left;
-}
-footer ul {
-    color: #0A3641;
-    list-style-type: none;
-    border-left: 1px solid #0A3641;
-    font-size: 10px;
-    padding: 15px 10px;
-    margin-left: 20px;
-}
-.bold {
-    font-weight: 900;
-    font-size: 11px;
-}
