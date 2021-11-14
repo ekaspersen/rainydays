@@ -1,0 +1,85 @@
+h1 {
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+/*--------------------------------------------
+----------------------------------------------
+store grid , store-cards and jacket-info 
+----------------------------------------------
+--------------------------------------------*/
+.store-card-grid {
+    margin-top: 5px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.store-card {
+    flex-basis: 51%;
+    text-align: center;
+    border: #0A3641 solid 1px;
+}
+.store-card img {
+    width: 80%;
+}
+.jacket-info .name {
+    color: #0A3641;
+    font-size: 20px;
+    font-weight: 800;
+}
+.jacket-info .category {
+    color: #D2D2D2;
+    font-size: 12px;
+    font-weight: 800;
+}
+.add-browse {
+    margin-top: 15px;
+    width: 100%; 
+}
+.add-browse-item {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.add-browse-item a {
+    color: #0A3641;
+}
+.store-big-dropdown {
+    height: 40px;
+    border: #0A3641 solid 1px;
+}
+.store-small-dropdown-container {
+    gap: 5px;
+    margin-top: 5px;
+    padding: 0;
+}
+@media screen and (min-width:720px ) { 
+    .store-card {
+        flex-basis: 30%;
+    }
+}
+/*--------------------------------------------
+----------------------------------------------
+Paginator
+----------------------------------------------
+--------------------------------------------*/
+.paginator {
+    margin: 0 auto;
+    width: 180px;
+    height: 50px;
+    color: #0A3641;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paginator a {
+    color: #0A3641;
+    font-weight: 500;
+}
+.paginator::before {
+    content: "<";
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+}
+.paginator::after {
+    content: ">";
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+}

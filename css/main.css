@@ -1,0 +1,322 @@
+/*General statements*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    font-weight: 500;
+}
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h1 {
+    color: #0A3641;
+}
+a {
+    text-decoration: none;
+}
+
+/*--------------------------------------------
+----------------------------------------------
+positional items 
+    OR 
+items i don't know where to position (yet).
+----------------------------------------------
+--------------------------------------------*/
+.inner {
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 1024px;
+}
+
+
+.multiple-columns {
+    display: flex;
+}
+.columns {
+    flex: 1;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------
+----------------------------------------------
+images and icons
+----------------------------------------------
+--------------------------------------------*/
+/* Images */
+img {
+    width: 100%;
+}
+/*--------------------------------------------
+----------------------------------------------
+Fonts
+----------------------------------------------
+--------------------------------------------*/
+.color-main {
+    color: #0A3641;
+}
+.font-s-20 {
+    font-size: 20px;
+}
+
+/*--------------------------------------------
+----------------------------------------------
+Buttons
+----------------------------------------------
+--------------------------------------------*/
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+}
+.big-cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 70px;
+}
+.cta {
+    color: white;
+}
+.cta-inverted {
+    color: #0A3641;
+    border: #0A3641 thin solid;
+}
+.bg-yellow {
+    background-color: #D9BD29;
+}
+.bg-main {
+    background-color: #0A3641;
+}
+.bg-red {
+    background-color: #A31010;
+}
+/*--------------------------------------------
+----------------------------------------------
+Forms
+----------------------------------------------
+--------------------------------------------*/
+#contact-modal {
+    position: fixed;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    background-color: white;
+    outline: rgba(0, 0, 0, 0.6) 10000px solid;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact-modal:target {
+    display: flex;
+}
+.contact-form {
+    width: 90%;
+    font-weight: 300;
+    margin: 0 auto;
+    color: #0A3641;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form-logo {
+    margin: 0 auto 50px auto;
+    width: 90%;
+    max-width: 400px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #0A3641;
+    border: #B8C7D7 solid thin;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #B8C7D7;
+}
+.contact-form .button {
+    margin-top: 36px;
+    margin: 36px auto 0px auto;
+    padding: 15px 40px;
+    background-color: #0A3641;
+    color: white;
+    border: none;
+    font-weight: 300;
+    font-size: 16px;
+}
+.contact-form label {
+    margin-top: 20px;
+    font-size: 14px;
+}
+#success {
+    position: fixed;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    background-color: white;
+    outline: rgba(0, 0, 0, 0.6) 10000px solid;
+
+    display: none;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+#success:target {
+    display: flex;
+}
+.success-logo {
+    margin-top: 50px;
+}
+.success-icon {
+    max-width: 150px;
+    margin: 0 auto 30px auto;
+}
+.success-thanks {
+    color: #0A3641;
+    font-weight: 700;
+}
+/*Code for cross at the top tight in the contact modal*/
+.exit {
+    width: 13px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    margin-left: auto;
+}
+.exit div {
+    height: 30px;
+    border-right: 1px solid #B8C7D7;
+    position: absolute;
+}
+.one {
+    transform: rotate(-45deg);
+}
+.two {
+    transform: rotate(45deg);
+}
+/*--------------------------------------------
+----------------------------------------------
+Dropdown
+----------------------------------------------
+--------------------------------------------*/
+.dropdown {
+    width: 100%;
+    border-radius: 0;
+    color: #B8C7D7;
+}
+.dropdown:active {
+    color: #0A3641;
+}
+.dropdown:focus {
+    color: #0A3641;
+}
+/*--------------------------------------------
+----------------------------------------------
+Misc
+----------------------------------------------
+--------------------------------------------*/
+
+.breadcrumbs {
+    color: #B8C7D7;
+    padding: 15px;
+}
+.breadcrumbs a {
+    color: #B8C7D7;
+}
+.breadcrumbs a::after {
+    content: " / ";
+    text-decoration: none;
+}
+.last:last-child::after {
+    content: " ";
+}
+
+/*--------------------------------------------
+----------------------------------------------
+Cart
+----------------------------------------------
+--------------------------------------------*/
+.h1-cart {
+    margin: 15px 0;
+}
+.hr-cart {
+    border: #0A3641 1px solid;
+}
+.items-cart {
+    margin: 15px;
+}
+.item-in-cart {
+    border-bottom: #0A3641 solid 2px;   
+    background-color: #E5E5E5;
+}
+.item-in-cart p {
+    font-size: 14px;
+}
+.cart-img img {
+    height: 100px;
+    width: 66px;
+}
+.cart-img {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-color: #AEBFD1;
+}
+.cart-text {
+    flex: 2;
+    margin: 5px;
+}
+.cart-text h2 {
+    color: #0A3641;
+}
+.cart-text p {
+    color: #AEBFD1;
+}
+.cart-select {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#quantity {
+    width: 75px;
+    height: 40px;
+    color: #0A3641;
+    border: #0A3641 thin solid;
+}
+.total {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #C4C4C4;
+}
+.total h2 {
+    margin-bottom: 15px;
+}
+.total p {
+    margin-bottom: 5px;
+}
+.total p:last-child {
+    margin-bottom: 0;
+}
+.grand-total {
+    font-weight: 800;
+}
+.cart-checkout {
+    margin-top: 15px;
+}

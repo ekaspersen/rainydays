@@ -1,0 +1,38 @@
+/*--------------------------------------------
+----------------------------------------------
+Product info
+----------------------------------------------
+--------------------------------------------*/
+.product-info-container {
+    margin-bottom: 30px;
+}
+.product-info-img {
+    border: solid #0A3641 1px;
+}
+h1 {
+    font-weight: 400;
+}
+.product-info-select-menu {
+    width: 270px;
+    margin-top: 5px;
+    gap: 5px;
+}
+option {
+    text-align: center;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-info-price {
+    margin: 25px 0;
+}
+.product-dropdown {
+    font-size: 20px;
+    height: 70px;
+}
+.product-h1-bold {
+    font-weight: 800;
+}

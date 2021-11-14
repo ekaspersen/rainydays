@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAINYDAYS</title>
+    <title>RAINYDAYS | About page</title>
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +14,13 @@
     <!--Stylesheets-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
-    <header class="homepage-header">
+    <header class="header">
         <div class="inner">
-        <nav class="homepage-nav"> 
+        <nav class="nav"> 
             <div>
             <a href="#">
             <img src="./images/icons/search.png" alt="search icon" class="nav-icon search">
@@ -40,16 +40,32 @@
           </a>
          </div>
         </nav>
-        <div class="header-text">
-            <p class="small">
-                Pushing the
-            </p>
-            <p class="big">
-                Comfort zone
-            </p>
-            <a href="store.html" class="cta-container bg-yellow header-text-btn">
-                <div class="cta">Browse Store</div>
-            </a>
+    </div>
+    </header>
+    
+    <div class="inner about-inner">
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a>
+            <a class="last" href="#">About Us</a>
+        </div>
+        <h1>About Us:</h1>
+        <hr>
+        <div class="multiple-columns-about">
+            <div class="column-about">
+                <h2>Affordable Quality:</h2>
+                <hr class="h2-hr">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suscipit mattis maecenas odio pulvinar ultrices. Egestas viverra in mauris ut varius pellentesque consectetur. Viverra iaculis quis fringilla nisi. Massa mauris mi urna ultrices aenean egestas adipiscing. Sit odio vitae elementum gravida in. Ornare in ut in morbi. Diam lectus sed risus semper nisi laoreet ante. Eros nibh lacus et vulputate enim aenean tincidunt rhoncus, adipiscing. Amet sapien ut feugiat adipiscing id. Ornare nibh ut morbi quam integer magna id etiam. Gravida velit molestie tempus ullamcorper. Imperdiet tellus id dui molestie. Vitae id quis enim dolor justo sit. Scelerisque eget aliquam diam dui, eget. Porttitor tempor odio etiam ut turpis. Morbi arcu id mauris ornare tristique. Massa quam metus, eu bibendum phasellus. Risus, semper tincidunt erat luctus. Id est consequat vitae dictum bibendum.</p>
+            </div>
+            <div class="column-about">
+                <h2>History:</h2>
+                <hr class="h2-hr">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suscipit mattis maecenas odio pulvinar ultrices. Egestas viverra in mauris ut varius pellentesque consectetur. Viverra iaculis quis fringilla nisi. Massa mauris mi urna ultrices aenean egestas adipiscing. Sit odio vitae elementum gravida in. Ornare in ut in morbi. Diam lectus sed risus semper nisi laoreet ante. Eros nibh lacus et vulputate enim aenean tincidunt rhoncus, adipiscing. Amet sapien ut feugiat adipiscing id. Ornare nibh ut morbi quam integer magna id etiam. Gravida velit molestie tempus ullamcorper. Imperdiet tellus id dui molestie. Vitae id quis enim dolor justo sit. Scelerisque eget aliquam diam dui, eget. Porttitor tempor odio etiam ut turpis. Morbi arcu id mauris ornare tristique. Massa quam metus, eu bibendum phasellus. Risus, semper tincidunt erat luctus. Id est consequat vitae dictum bibendum.</p>
+                <div id="show-me" class="hidden-target">
+                <p class="more-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suscipit mattis maecenas odio pulvinar ultrices. Egestas viverra in mauris ut varius pellentesque consectetur. Viverra iaculis quis fringilla nisi. Massa mauris mi urna ultrices aenean egestas adipiscing. Sit odio vitae elementum gravida in. Ornare in ut in morbi. Diam lectus sed risus semper nisi laoreet ante. </p>
+                <p class="more-p">Eros nibh lacus et vulputate enim aenean tincidunt rhoncus, adipiscing. Amet sapien ut feugiat adipiscing id. Ornare nibh ut morbi quam integer magna id etiam. Gravida velit molestie tempus ullamcorper. Imperdiet tellus id dui molestie. Vitae id quis enim dolor justo sit. Scelerisque eget aliquam diam dui, eget. Porttitor tempor odio etiam ut turpis. Morbi arcu id mauris ornare tristique. Massa quam metus, eu bibendum phasellus. Risus, semper tincidunt erat luctus. Id est consequat vitae dictum bibendum.</p>
+                </div>
+                <a class="show-me-more" href="#show-me"></a> <!-- this was supposed to switch after content to "Show Less" and then be able to close itselft Sadly i can't figure out how to change the link itself when targeted...-->
+            </div>
         </div>
     </div>
     <div id="menu">
@@ -67,69 +83,7 @@
             <div class="two"></div>
         </a>
     </div>
-    </header>
-    <section class="arrivals">
-        <div class="inner">
-            <h1 class="arrivals-title">
-                New arrivals
-            </h1>
-            <hr>
-            <div class="multiple-columns" id="arrivals">
-                <div class="column card-arrivals">
-                    <img src="./images/rainchaser.png" alt="yellow jacket">
-                    <div class="jacket-info">
-                        <p class="category">RAIN COAT</p>
-                        <p class="name">Rain Chaser</p>
-                        <p class="price">59.99€</p>
-                    </div>
-                </div>
-                <div class="column card-arrivals">
-                    <img src="./images/blue-parkas.png" alt="yellow jacket">
-                    <div class="jacket-info">
-                        <p class="category">PARKAS</p>
-                        <p class="name">Alpine Lion</p>
-                        <p class="price">129.99€</p>
-                    </div>
-                </div>
-                <div class="column card-arrivals third-one">
-                    <img src="./images/hoodless.png" alt="yellow jacket">
-                    <div class="jacket-info">
-                        <p class="category">PARKAS</p>
-                        <p class="name">Ol' Sturdy</p>
-                        <p class="price">129.99€</p>
-                    </div>
-                </div>
-            </div>
-            <a href="store.html" id="arrivals-btn" class="cta-container bg-main">
-                <div class="cta bg-main">Browse Store</div>
-            </a>
-        </div>
-    </section>
-    <section class="hero-banner">
-        <div class="gradient">
-        <div class="inner">
-            <div class="hero-text">
-                <p class="small">
-                    Who are
-                </p>
-                <p class="big kerning">
-                    RAINYDAYS
-                </p>
-                    <a href="#" class="cta-container bg-red">
-                        <div class="cta">Get to know us</div>
-                    </a>
-                
-            </div>
-        </div>
-    </div>
-    </section>
     <section class="contact">
-        <p class="small-contact-box contact-box">
-            Contact US
-        </p>
-        <a href="#contact-modal" class="big-contact-box contact-box">
-            <div>Contact Form</div>
-        </a>
         <div id="contact-modal">
             
             <a href="#" class="exit">
@@ -137,7 +91,7 @@
                 <div class="two"></div>
             </a>
             <img class="contact-form-logo" src="/images/logo-w-slogan.png" alt="logo">
-
+    
             <form class="contact-form" action="post">
                 <label for="email">Enter your email:</label>
                 <input id="email-contact" type="email" name="email-contact" placeholder="email.adress@mail.com">
@@ -148,7 +102,7 @@
                 <a href="#success" class="button">Send message</a>
             </form>
         </div>
-
+    
         <div id="success">
             <a href="#contactmodal" class="exit">
                 <div class="one"></div>
@@ -164,9 +118,9 @@
             <div class="columns footer-logo"><img src="/images/logo.png" alt=""></div>
             <div class="columns columns-footer-two">
                 <ul>
-                    <li><a href="index.html" class="bold">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="store.html">Store</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html" class="bold">About</a></li>
                     <li><a href="#contact-modal">Contact</a></li>
                 </ul>
                 <ul>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAINYDAYS | storefront</title>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!--For the arrows in paginator-->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+        <nav class="nav"> 
+            <div>
+            <a href="#">
+            <img src="./images/icons/search.png" alt="search icon" class="nav-icon search">
+          </a>
+            <a href="cart.html">
+            <img src="./images/icons/cart.png" alt="cart icon" class="nav-icon cart">
+          </a>
+         </div>
+         <div>
+            <a href="/">
+            <img src="./images/logo.png" alt="RAINYDAYS logo" class="nav-logo">
+          </a>
+        </div>
+            <div>
+            <a href="#menu">
+            <img src="./images/icons/hamburger.svg" alt="hamburger nav-icon" class="icon hamburger">
+          </a>
+         </div>
+        </nav>
+    </div>
+    <div id="menu">
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="store.html">Store</a>
+            <a href="about.html">About Us</a>
+            <a href="#contact-modal">Contact Us</a>
+        </div>
+        <div class="logo">
+            <img src="images/logo-w-slogan-white.png" alt="">
+        </div>
+        <a href="#" class="exit">
+            <div class="one"></div>
+            <div class="two"></div>
+        </a>
+    </div>
+    </header>
+    <div class="inner">
+
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a>
+            <a class="last" href="#">Store</a>
+        </div>
+        <h1>Shop: All items</h1> <!-- With some js or php it could be 'shop: (Category selected)' -->
+        <select class="dropdown store-big-dropdown" name="category" id="category-select">
+            <option value="">Type of jacket:</option>
+            <option value="parkas">Parkas</option>
+            <option value="rain-coat">Rain Coat</option>
+            <option value="fleece">Fleece</option>
+        </select>
+        <div class="multiple-columns store-small-dropdown-container">
+            <div class="columns">
+                <select class="dropdown" name="sort-by" id="sort-by">
+                    <option value="">Sort by:</option>
+                    <option value="parkas">High to low</option>
+                    <option value="rain-coat">Low to high</option>
+                </select>
+            </div>
+            
+            <div class="columns">
+                <select class="dropdown" name="size" id="size">
+                    <option value="">Size:</option>
+                    <option value="parkas">XS</option>
+                    <option value="rain-coat">S</option>
+                    <option value="fleece">M</option>
+                    <option value="fleece">L</option>
+                    <option value="fleece">XL</option>
+                </select>
+            </div>
+            <div class="columns">
+                <select class="dropdown" name="color" id="color">
+                    <option value="">Color:</option>
+                    <option value="parkas">black</option>
+                    <option value="parkas">white</option>
+                    <option value="parkas">Navy blue</option>
+                    <option value="rain-coat">Light blue</option>
+                    <option value="fleece">Red</option>
+                    <option value="fleece">Yellow</option>
+                    <option value="fleece">Green</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="inner">
+    
+    <div class="multiple-columns store-card-grid">
+        <div class="columns store-card">
+            <img src="./images/blue-parkas.png" alt="yellow jacket">
+            <div class="jacket-info">
+                <p class="name">Alpine Lion</p>
+                <p class="category">PARKAS</p>
+            </div>
+            <div class="add-browse">
+                <div class="add-browse-item-column">
+                    <div class="add-browse-item last-add-browse-item">
+                        <a href="product-page.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns store-card">
+            <img src="./images/rainchaser.png" alt="yellow jacket">
+            <div class="jacket-info">
+                <p class="name">Rain Chaser</p>
+                <p class="category">RAIN COAT</p>
+            </div>
+            <div class="add-browse">
+                <div class="add-browse-item-column">
+                    <div class="add-browse-item last-add-browse-item">
+                        <a href="product-page.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns store-card">
+            <img src="./images/fleece.png" alt="yellow jacket">
+            <div class="jacket-info">
+                <p class="name">Anti-Freeze Fleece</p>
+                <p class="category">FLEECE</p>
+            </div>
+            <div class="add-browse">
+                <div class="add-browse-item-column">
+                    <div class="add-browse-item last-add-browse-item">
+                        <a href="product-page.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns store-card">
+            <img src="./images/hoodless.png" alt="yellow jacket">
+            <div class="jacket-info">
+                <p class="name">Ol' Sturdy</p>
+                <p class="category">RAIN COAT</p>
+            </div>
+            <div class="add-browse">
+                <div class="add-browse-item-column">
+                    <div class="add-browse-item last-add-browse-item">
+                        <a href="product-page.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns store-card">
+            <img src="./images/bluebuggi.png" alt="yellow jacket">
+            <div class="jacket-info">
+                <p class="name">Purry CatWoman</p>
+                <p class="category">PARKAS</p>
+            </div>
+            <div class="add-browse">
+                <div class="add-browse-item-column">
+                    <div class="add-browse-item last-add-browse-item">
+                        <a href="product-page.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns store-card">
+            <img src="./images/blue-parkas.png" alt="yellow jacket">
+            <div class="jacket-info">
+                <p class="name">Alpine Lion</p>
+                <p class="category">PARKAS</p>
+            </div>
+            <div class="add-browse">
+                <div class="add-browse-item-column">
+                    <div class="add-browse-item last-add-browse-item">
+                        <a href="product-page.html">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="paginator">
+        <a href="#page1">1</a>
+        <a href="#page2">2</a>
+        <a href="#">...</a> <!--This could be made into a select menu where you could choose any page-->
+        <a href="#pagelast">7</a>
+    </div>
+</div>
+<section class="contact">
+    <div id="contact-modal">
+        
+        <a href="#" class="exit">
+            <div class="one"></div>
+            <div class="two"></div>
+        </a>
+        <img class="contact-form-logo" src="/images/logo-w-slogan.png" alt="logo">
+
+        <form class="contact-form" action="post">
+            <label for="email">Enter your email:</label>
+            <input id="email-contact" type="email" name="email-contact" placeholder="email.adress@mail.com">
+            <label for="name">Enter your name: </label>
+            <input id="name-contact" type="text" name="name-contact" placeholder="John J. Johnson">
+            <label for="name">Enter your message: </label>
+            <textarea id="textarea-contact" name="textarea-contact" rows="8" placeholder="Type message here..."></textarea>
+            <a href="#success" class="button">Send message</a>
+        </form>
+    </div>
+
+    <div id="success">
+        <a href="#contactmodal" class="exit">
+            <div class="one"></div>
+            <div class="two"></div>
+        </a>
+        <img class="contact-form-logo success-logo" src="/images/logo-w-slogan.png" alt="logo">
+        <img class="success-icon" src="/images/icons/success.svg" alt="success-icon">
+        <p class="success-thanks">Thank you for your message!</p>
+    </div>
+</section>
+    <div class="outer-footer">
+        <footer>
+            <div class="columns footer-logo"><img src="/images/logo.png" alt=""></div>
+            <div class="columns columns-footer-two">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html" class="bold">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact-modal">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="bold">Social Media:</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

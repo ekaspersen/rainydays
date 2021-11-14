@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAINYDAYS</title>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: #AEBFD1;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    min-width: 500px;
+    height: 600px;
+    background-color: #0A3641;
+}
+form {
+    width: 80%;
+    margin: auto 0;
+}
+label {
+    color: #AEBFD1;
+    font-size: 20px;
+}
+input {
+    background-color: #AEBFD1;
+    border: none;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    padding-left: 10px;
+    color: #0A3641;
+    font-size: 16px;
+}
+a {
+    border: 2px solid #AEBFD1;
+    color: #AEBFD1;
+    margin-top: 20px;
+}
+</style>
+<body>
+  <div class="container">
+    <form action="POST">
+        <label for="card-nr">Credit card number:</label> <br>
+        <input type="number" name="card-nr" id="card-nr"> <br>
+        <label for="cvc">Security code:</label> <br>
+        <input type="number" name="cvc" id="cvc"> <br>
+        <label for="ex-date">expiration date:</label> <br>
+        <input type="month" name="ex-date" id="ex-date"> <br>
+        <label for="card-name">Name on card:</label> <br>
+        <input type="text" name="card-name" id="card-name"> <br>
+        <a href="checkout-success.html" class="big-cta-container">Finish Order</a>
+    </form>
+    
+  </div>
+</body>
+</html>

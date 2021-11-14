@@ -1,88 +1,69 @@
-/*General statements*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "montserrat";
-    font-weight: 500;
-}
-body {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-}
-
 /*
 LIST OF CONTENT:
-    1. positional items
-    2. images and icons
-    3. fonts
-    4. buttons
+    1. Header
+    2. Arrivals
+    3. About us (Who are we?)
+    4. Contact
 */
 
 /*--------------------------------------------
 ----------------------------------------------
-positional items 
-    OR 
-items i don't know where to position (yet).
+header
 ----------------------------------------------
 --------------------------------------------*/
-.inner {
-    margin: 0 auto;
-    margin-left: 15px;
-    margin-right: 15px;
-    max-width: 1024px;
+header {
+    background-color: transparent;
 }
 
+.homepage-header {
+    height: 396px;
+    position: relative;
 
-.multiple-columns {
-    display: flex;
-    gap: 5px;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
-}
-
-/*--------------------------------------------
-----------------------------------------------
-images and icons
-----------------------------------------------
---------------------------------------------*/
-/* Images */
-img {
-    width: 100%;
-}
-
-
-/*--------------------------------------------
-----------------------------------------------
-Buttons
-----------------------------------------------
---------------------------------------------*/
-.cta-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 40px;
-}
-.cta {
+    background-image: url(../images/hero-banners/yellow-jacket-dude.png);
+    background-position: right bottom;
+    background-size: 720px 500px;
+    background-repeat: no-repeat;
+} 
+.header-text {
+    position: absolute;
+    bottom: 140px;
+    right: 15px;
     color: white;
+    text-align: right;
 }
-
-.bg-yellow {
-    background-color: #D9BD29;
+.small {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: -10px;
 }
-.bg-main {
-    background-color: #0A3641;
+.big {
+    font-size: 35px;
 }
-.bg-red {
-    background-color: #A31010;
+.header-text-btn {
+    float: right;
+}
+/*516px --> Lphone/tablet/Desktop*/
+@media screen and (min-width:720px ) { 
+    .homepage-header {
+        background-size: auto 120%;
+        background-position: center bottom;
+        height: 650px;
+    } 
+    .header-text {
+        text-align: left;
+        bottom: 140px;
+        left: 15px;
+    }
+    .small {
+        font-size: 16px;
+        margin-bottom: -7px;
+    }
+    .big {
+        font-size: 42px;
+    }
+    .header-text-btn {
+        float: left;
+    }
 }
 
 /*--------------------------------------------
@@ -195,7 +176,6 @@ Contact
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin: 35px 0;
 }
 .contact-box {
@@ -209,7 +189,6 @@ Contact
     width: 80%;
     max-width: 170px;
     height: 40px;
-
     font-size: 22px;
 }
 .big-contact-box {
@@ -218,7 +197,6 @@ Contact
     width: 90%;
     max-width: 260px;
     height: 125px;
-
     font-size: 22px;
 }
 
